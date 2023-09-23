@@ -9,6 +9,6 @@ int firstNum = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число:");
 int secondNum = Convert.ToInt32(Console.ReadLine());
 
-int max = firstNum;
-if (max < secondNum) max = secondNum;
-Console.WriteLine($"max = {max}");
+if (firstNum > secondNum) Console.WriteLine($"max = {firstNum}");
+else if (firstNum < secondNum) Console.WriteLine($"max = {secondNum}");
+else Console.WriteLine("Числа равны");
